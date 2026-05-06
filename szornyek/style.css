@@ -5,6 +5,17 @@ body{
 header{
     background-color: orange;
     color: green;
-    font-size: 35px;
+    font-size: 45px;
     text-align: center;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+nav{
+    font-size: 25px;
+    background-color: green;
+    
 }
