@@ -1,0 +1,10 @@
+body{
+    max-width: 80%;
+    margin: auto;
+}
+header{
+    background-color: orange;
+    color: green;
+    font-size: 35px;
+    text-align: center;
+}
