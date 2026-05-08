@@ -19,3 +19,6 @@ nav{
     background-color: green;
     
 }
+main div h2{
+    border-top: 2px green;
+}
