@@ -58,3 +58,11 @@ aside{
     grid-template-columns: 120px 1fr;
     gap: 20px;
 }
+
+div h2 {
+    border-top: 2px solid green;
+    width: fit-content;
+    margin: 10px auto;
+    padding-top: 3px;
+}
+/** claude a fit content magamtól nem jöttem rá**/
