@@ -1,12 +1,21 @@
 body{
     max-width: 80%;
     margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas: 
+    "h h h"
+    "n n n"
+    "h1 h1 h1"
+    "m m m";
+    
 }
 header{
     background-color: orange;
     color: green;
     font-size: 45px;
     text-align: center;
+    grid-area: h;
     
 }
 a{
@@ -17,8 +26,43 @@ a{
 nav{
     font-size: 25px;
     background-color: green;
+    grid-area: n;
     
 }
-main div h2{
+div h2{
     border-top: 2px green;
+}
+main{
+    text-align: center;
+    background-color: white;
+    grid-area: m;
+    
+}
+h1{
+    text-align: center;
+    background-image: url(Képernyőkép\ 2026-05-08\ 115210.png);
+    grid-area: h1;
+}
+aside{
+    background-image: url(Képernyőkép\ 2026-05-08\ 115210.png);
+    grid-area: a;
+}
+article  div:first-child {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    text-align: left;
+}
+article > div:first-child img {
+    width: 100px;
+    height: auto;
+}
+
+article  div:first-child p {
+    font-weight: bold;
+    margin: 4px 0;
 }
