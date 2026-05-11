@@ -1,0 +1,39 @@
+header{
+    background-color: orange;
+    color: green;
+    font-size: 45px;
+    text-align: center;
+    grid-area: h;
+    
+}
+nav{
+    font-size: 25px;
+    background-color: green;
+    grid-area: n;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+h1{
+    color: white;
+}
+.szornyek{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+div div{
+    border: 1px solid grey;
+    border-radius: 15px;
+    gap: 15px;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+}
+div p{
+    background-image: url(Képernyőkép\ 2026-05-08\ 115210.png);
+    color: white;
+}

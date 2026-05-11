@@ -1,71 +1,80 @@
-body{
-    max-width: 80%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
-    grid-template-areas: 
+body {
+  max-width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-areas:
     "h h h"
     "n n n"
     "h1 h1 h1"
     "m m m";
-    
 }
-header{
-    background-color: orange;
-    color: green;
-    font-size: 45px;
-    text-align: center;
-    grid-area: h;
-    
+header {
+  background-color: orange;
+  color: green;
+  font-size: 45px;
+  text-align: center;
+  grid-area: h;
 }
-a{
-    text-decoration: none;
-    color: white;
-    
+a {
+  text-decoration: none;
+  color: white;
 }
-nav{
-    font-size: 25px;
-    background-color: green;
-    grid-area: n;
-    
+nav {
+  font-size: 25px;
+  background-color: green;
+  grid-area: n;
 }
-div h2{
-    border-top: 2px green;
+div h2 {
+  border-top: 2px green;
 }
-main{
-    text-align: center;
-    background-color: white;
-    grid-area: m;
-    
+main {
+  text-align: center;
+  background-color: white;
+  grid-area: m;
 }
-h1{
-    text-align: center;
-    background-image: url(Képernyőkép\ 2026-05-08\ 115210.png);
-    grid-area: h1;
+h1 {
+  text-align: center;
+  background-image: url(Képernyőkép\ 2026-05-08\ 115210.png);
+  grid-area: h1;
 }
-aside{
-    background-image: url(Képernyőkép\ 2026-05-08\ 115210.png);
-    grid-area: a;
+
+.border {
+  border: 2px solid green;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
 }
-.border{
-    border: 2px solid green;
-    border-radius: 10px;
-    padding: 15px;
-    margin-bottom: 20px;
-}
-.sect{
-    display: grid;
-    grid-template-columns: 120px 1fr;
-    gap: 20px;
+.sect {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 20px;
 }
 
 div h2 {
-    border-top: 2px solid green;
-    width: fit-content;
-    margin: 10px auto;
-    padding-top: 3px;
+  border-top: 2px solid green;
+  width: fit-content;
+  margin: 10px auto;
+  padding-top: 3px;
 }
 /** claude a fit content magamtól nem jöttem rá**/
-h1{
-    color: white;
+h1 {
+  color: white;
+}
+@media screen and (max-width: 600px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-area: 
+    "h"
+    "n"
+    "h1"
+    "m";
+  }
+  .sect{
+    grid-template-columns: 1fr;
+  }
+  nav{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
