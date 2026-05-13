@@ -10,7 +10,8 @@ nav{
     font-size: 25px;
     background-color: green;
     grid-area: n;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     
 }
 a{
@@ -45,7 +46,7 @@ div p{
         
     }
     nav{
-    display: grid;
+    
     grid-template-columns: 1fr;
   }
 
