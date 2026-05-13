@@ -11,6 +11,7 @@ nav{
     background-color: green;
     grid-area: n;
     
+    
 }
 a{
     text-decoration: none;
@@ -37,7 +38,7 @@ div p{
     background-image: url(Képernyőkép\ 2026-05-08\ 115210.png);
     color: white;
 }
-@media screen and(max-width:600px) {
+@media screen and (max-width:600px) {
     .szornyek{
         display: grid;
         grid-template-columns: 1fr;
